@@ -1,3 +1,4 @@
+//Write a program to Print numbers from 1-100, which are divisible by 5, and if the number is greater than 40.
 
 public class DivisibleBy5 {
 
