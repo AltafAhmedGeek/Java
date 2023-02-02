@@ -1,3 +1,5 @@
+//Write a program to print even, odd, sum of natural number using for loop from 1-200
+
 
 public class EvenOddSum {
 	public void evenNums()
