@@ -6,12 +6,27 @@ import java.util.StringTokenizer;//imports class StringTokenizer
 public class StringTokenExample {//class with main()
 
 	public static void main(String[] args) {
-		StringTokenizer s1= new StringTokenizer("this is string"," ");//Instantiating class StrinTokenizer and defining the object with a String
-		while (s1.hasMoreTokens()) {// looping until s1 has tokens left after each iteration
-			System.out.println(s1.nextToken());//printing each token
+		StringTokenizer s1= new StringTokenizer("this is string");
+		while (s1.hasMoreTokens()) {
+			System.out.println(s1.nextToken());
 			
 		}
-
+		
+		StringTokenizer s2= new StringTokenizer("this,is,string",",");
+		while (s2.hasMoreTokens()) {
+			System.out.println(s2.nextToken());
+			
+		}
+		StringTokenizer s3= new StringTokenizer("this.is.string",".",true);
+		while (s3.hasMoreTokens()) {
+			System.out.println(s3.nextToken());
+			
+		}
+		StringTokenizer s4= new StringTokenizer("this.is.string",".",false);
+		while (s4.hasMoreElements()) {
+			System.out.println(s4.nextToken());
+			
+		}
 	}
 
 }
