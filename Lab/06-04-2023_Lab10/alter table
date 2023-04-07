@@ -1,0 +1,18 @@
+-- a.Write a SQL statement to add a foreign key constraint named fk_job_id on job_id column of 
+-- job_history table referencing to the primary key job_id of jobs table.
+
+alter table job_history
+add constraint fk_job_id
+foreign key (job_id)
+references jobs(job_id);
+
+-- b.Write a SQL statement to rename the table countries to country_new.
+
+alter table countries
+rename  country_new;
+
+-- c.Write a SQL statement to change the name of the column country_id to con_id, 
+-- keeping the data type and size same.
+
+alter table country_new
+rename column country_id to con_id;

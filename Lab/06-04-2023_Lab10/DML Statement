@@ -1,0 +1,5 @@
+
+-- a.Write a SQL statement to insert a record with your own value into the table countries against each columns.
+
+insert into country_new
+values('2','italy','europe');
