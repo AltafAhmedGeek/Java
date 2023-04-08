@@ -32,4 +32,3 @@ employee_id varchar(7) unique,
  department_id varchar(7)
 );
 
-desc job_history;
